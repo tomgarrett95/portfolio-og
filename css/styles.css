@@ -49,21 +49,21 @@ a.nav-buttons {
   text-decoration: none;
 }
 
-h1, 
+h2, 
 a, 
 .nav-buttons a:hover, 
 .nav-buttons a:active {
   color:#fca311;
 }
 
-.my-name h6:hover, 
-.my-name h6:active {
+.my-name h1:hover, 
+.my-name h1:active {
   color: #ffffff;
 }
 
-.my-name h6 {
+.my-name h1 {
   color: #fca311;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -199,7 +199,7 @@ a,
   background-color: #000000;
   color: #ffffff;
   display: flex;
-  padding:10vh 8%;
+  padding: 10vh 8%;
 }
 
 .fab, .fas {
@@ -217,7 +217,7 @@ a,
 .fa-github-square:hover,
 .fa-github-square:active 
 {
-    color: #fca311;
+  color: #fca311;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -279,7 +279,7 @@ a,
 
   .greeting {
     align-items: center;
-    display:grid;
+    display: grid;
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -337,5 +337,5 @@ a,
     font-size: 0.8rem;
     padding: 2vh 8%;
     width: 100%;
-    }
   }
+}
