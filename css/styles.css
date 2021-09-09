@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,500;1,600&display=swap');
+* {
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #14213d;
+  font-family: 'Azeret Mono', monospace;
+  font-size: 16px;
+  margin: 0;
+  -ms-overflow-style: none;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding: 0;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  font-family: 'Azeret Mono', monospace;
+  font-weight: bolder;
+  height: 10vh;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 2em 8%;
+  position: fixed;
+  width: 100%;
+}
+
+.my-name a {
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: inline-block;
+  position: relative;
+}
+
+a.nav-buttons {
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h2, 
+a, 
+.nav-buttons a:hover, 
+.nav-buttons a:active {
+  color: #fca311;
+}
+
+.my-name h1:hover, 
+.my-name h1:active {
+  color: #ffffff;
+}
+
+.my-name h1 {
+  color: #fca311;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#welcome-page {
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: auto;
+  height: 100vh;
+  padding: 18% 8%;
+}
+
+.greeting {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  height: 50%;
+  justify-items: start;
+}
+
+#me {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  height: auto;
+  max-height: 400px;
+  max-width: 400px;
+  min-height: 150px;
+  min-width: 150px;
+  object-fit: fill;
+  place-self: center;
+  width: 100%;
+}
+
+.welcome-text {
+  align-items: end;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  padding: 0 0 5px;
+}
+
+.io-academy {
+  color: #fca311;
+  text-decoration: none;
+}
+
+.cv a {
+  align-items: start;
+  background-color: #fca311;
+  border-radius: 25px;
+  color: #000000;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  height: auto;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.cv a:hover, 
+.cv a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#about-me {
+  background-color: #00000080;
+  border-radius: 25px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  color: #ffffff;
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: 2fr 1fr;
+  margin: 5%;
+  padding: 3%;
+  scroll-margin-top: 5em;
+}
+
+#about-me img {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  grid-column: 2/-1;
+  max-height: 300px;
+  max-width: 400px;
+}
+
+.about-content {
+  color:#ffffff;
+}
+
+#portfolio {
+  background-color: #00000080;
+  border-radius: 25px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  color: #ffffff;
+  margin: 5%;
+  padding: 3%;
+  scroll-margin-top: 5em;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: grid;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  grid-template-columns: auto auto;
+  padding: 0 0 5%;
+}
+
+.project-box {
+  background-color: #ffffff9f;
+  border-radius: 25px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  color: #000000;
+  padding: 2em;
+}
+
+.project-box img {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  max-height: 300px;
+  max-width: 400px;
+}
+
+#contact {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  padding: 10vh 8%;
+}
+
+.fab, .fas {
+  color: #ffffff;
+  display: flexbox;
+  font-size: 3rem;
+  justify-content: space-between;
+  width: 1em;
+}
+
+.fa-envelope-square:hover, 
+.fa-envelope-square:active,
+.fa-linkedin:hover,
+.fa-linkedin:active,
+.fa-github-square:hover,
+.fa-github-square:active 
+{
+  color: #fca311;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #welcome-page {
+    height: 60%;
+    padding: 25vh 8%;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-box {
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 2% 0;
+  }
+
+  .project-box h3 {
+    grid-row: 1/2;
+  }
+
+  .project-box img {
+    grid-row: 2/-1;
+    height: auto;
+    object-fit: fill;
+    width: 100%;
+  }
+
+  .project-box p {
+    grid-row: 2/-1;
+    place-self: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    
+  .my-name h6 {
+    font-size: 0.8rem;
+  }
+
+  a.nav-buttons {
+    font-size: 0.8rem;
+  }
+
+  #welcome-page {
+    height: 100vh;
+    padding: 30% 8%;
+  }
+
+  .greeting {
+    align-items: center;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+  }
+
+  #me {
+    box-shadow: none;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-height: 250px;
+    max-width: 250px;
+    padding-bottom: 10px;
+    width: 70%;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .cv a {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+  }
+
+  #about-me img {
+    max-height: 210px;
+    max-width: 280px;
+  }
+
+  #portfolio {
+    padding: 2vh 3%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-box {
+    display: block;
+    margin: 2% 0;
+  }
+
+  .project-box img {
+    max-height: 210px;
+    max-width: 280px;
+  }
+
+  #contact {
+    display: flex;
+    font-size: 0.8rem;
+    padding: 2vh 8%;
+    width: 100%;
+  }
+}
